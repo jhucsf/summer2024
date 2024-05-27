@@ -17,7 +17,7 @@ Write an assembly language program that prints the integers from 1 to 10.
 
 Expected output:
 
-<div class="highlighter-rouge"><pre>
+```
 1
 2
 3
@@ -28,7 +28,7 @@ Expected output:
 8
 9
 10
-</pre></div>
+```
 
 ## Count to N
 
@@ -36,7 +36,7 @@ Write an assembly language program that prompts the user to enter an integer val
 
 Example session (user input in **bold**):
 
-<div class="highlighter-rouge"><pre>
+```
 Enter an integer: <b>7</b>
 1
 2
@@ -45,7 +45,7 @@ Enter an integer: <b>7</b>
 5
 6
 7
-</pre></div>
+```
 
 ## Count to N by increment
 
@@ -53,11 +53,11 @@ Write an assembly language program which prompts the user to enter two integer v
 
 Example session (user input in **bold**):
 
-<div class="highlighter-rouge"><pre>
+```
 Enter maximum: <b>11</b>
 Enter increment: <b>3</b>
 1
 4
 7
 10
-</pre></div>
+```

@@ -16,14 +16,14 @@ in an array, then find the maximum from the values in the array.
 Here is an example session showing assembling and running the program
 (user input in **bold**):
 
-<div class="highlighter-rouge"><pre>
-$ <b>make arrayMax</b>
+```
+$ make arrayMax
 gcc -c -g -no-pie -o arrayMax.o arrayMax.S
 gcc -no-pie -o arrayMax arrayMax.o
-$ <b>./arrayMax</b>
-Enter 10 integer values: <b>3 2 61 35 74 73 70 7 94 53</b>
+$ ./arrayMax
+Enter 10 integer values: 3 2 61 35 74 73 70 7 94 53
 Max is 94
-</pre></div>
+```
 
 If you finish this task and are looking for a more challenging task,
 you can try the [second assembly language exercise](/resources/assembly2).

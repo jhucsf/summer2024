@@ -68,33 +68,33 @@ vim:ft=gas:
 
 ## Assembling the Hello, world program
 
-You can assemble and run the Hello, world program as follows (user input shown in **bold**):
+You can assemble and run the Hello, world program as follows (user input shown inline):
 
-<div class="highlighter-rouge"><pre>
-$ <b>gcc -c -no-pie -o hello.o hello.S</b>
-$ <b>gcc -no-pie -o hello hello.o</b>
-$ <b>./hello</b>
+```
+$ gcc -c -no-pie -o hello.o hello.S
+$ gcc -no-pie -o hello hello.o
+$ ./hello
 Hello, world!
-Enter an integer: <b>42</b>
+Enter an integer: 42
 You entered: 42
-</pre></div>
+```
 
 ## Assembling and testing the real program
 
-The following commands show assembling and testing the "real" program (user input shown in **bold**).  It assumes the code is in a file called `hist.S`.
+The following commands show assembling and testing the "real" program (user input shown inline).  It assumes the code is in a file called `hist.S`.
 
-<div class="highlighter-rouge"><pre>
-$ <b>gcc -c -g -no-pie -o hist.o hist.S</b>
-$ <b>gcc -no-pie -o hist hist.o</b>
-$ <b>./hist</b>
-Enter 20 integer values: <b>4 95 31 79 43 77 49 19 93 84 13 62 84 30 42 67 23 1 81 95</b>
+```
+$ gcc -c -g -no-pie -o hist.o hist.S
+$ gcc -no-pie -o hist hist.o
+$ ./hist
+Enter 20 integer values: 4 95 31 79 43 77 49 19 93 84 13 62 84 30 42 67 23 1 81 95
 Histogram:
 4
 3
 3
 4
 6
-</pre></div>
+```
 
 Note that the histogram output is showing the number of input values in each range (0-19, 20-39, etc.)
 
