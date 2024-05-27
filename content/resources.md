@@ -122,7 +122,7 @@ sudo apt-get install emacs vim
 ```
 
 ## Vim setup
-[Tutorial](/vim) on setting up Vim
+[Tutorial](/resources/vim) on setting up Vim
 
 ## Using Git
 [Github ssh authentication](/resources/github-ssh): How to use ssh to access
