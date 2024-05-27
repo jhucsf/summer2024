@@ -1,0 +1,15 @@
+baseURL: https://jhucsf.github.io/summer2024
+languageCode: en-us
+title: "EN.601.229: Computer System Fundamentals"
+theme: "brimhall"
+
+relativeURLs: true
+
+# Enable KaTeX rendering:
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+pygmentsUseClasses: true
+pygmentsCodefences: true

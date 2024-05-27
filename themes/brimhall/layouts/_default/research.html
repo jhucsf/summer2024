@@ -1,0 +1,23 @@
+{{ define "main" }}
+
+  <h1 class="page-title">{{ .Page.Title | markdownify | safeHTML }}</h1>
+  <div class="posts">
+
+    {{ range .Site.Data.research }}
+    <article class="post">
+      <h3 class="post-title">
+        {{ .title | markdownify }}
+      </h3>
+
+      <div class="post-metadata">{{ .venue }}</a> &middot; {{ .authors }}</div>
+      
+      {{ .abstract | markdownify }}
+
+      <div class="post-metadata-footer"> {{ if .preprint }}<a href=" {{ .preprint }} ">Preprint</a> &middot; {{ end }} {{ if .proceedings }} <a href=" {{ .proceedings }} ">Proceedings</a> &middot; {{ end }} <a href="#/" citation="citation-{{ .bibtex | sha256 }}" onclick="var e = document.getElementById('citation-{{ .bibtex | sha256 }}');e.classList.toggle('post-citation-nodisplay')">BibTeX</a></div>
+      <div class="post-citation-nodisplay" id="citation-{{ .bibtex | sha256 }}"><pre><code>{{ .bibtex }}</code></pre></div>
+
+    </article>
+
+    {{ end }}
+  </div>
+{{ end }}

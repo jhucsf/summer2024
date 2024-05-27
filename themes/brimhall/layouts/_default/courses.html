@@ -1,0 +1,27 @@
+{{ define "main" }}
+  <h1 class="page-title">{{ .Page.Title | markdownify | safeHTML }}</h1>
+  <div class="posts">
+    
+    {{ .Content }}
+
+    {{ range .Site.Data.courses }}
+    {{ $term := .term }}
+    {{ range .courses }}
+    <article class="post">
+        <h3 class="post-title">
+          {{ .title | markdownify }}
+        </h3>
+  
+        <div class="post-metadata">{{ $term }}</a> {{ if .area }} &middot; {{ .area }} {{ end }} &middot; {{ .instructors }} </div>
+        
+        {{ .description | markdownify }}
+  
+        {{ if .link }}
+        <div class="post-metadata-footer"><a href=" {{ .link }} ">Course Website</a></div>
+        {{ end }}
+        
+      </article>
+    {{ end }}
+    {{ end }}
+  </div>
+{{ end }}

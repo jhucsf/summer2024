@@ -1,0 +1,13 @@
+name: "Brimhall"
+license: "All Rights Reserved"
+licenselink: "https://github.com/brennonbrimhall/brennonbrimhall.github.io/blob/master/LICENSE"
+description: "Copyright (c) 2021 Brennon Brimhall. All rights reserved."
+homepage: "http://brennonbrimhall.github.io/"
+tags: []
+features: []
+min_version: "0.41.0"
+assetDir: "assets"
+
+author:
+  name: "Brennon Brimhall"
+  homepage: "http://brennonbrimhall.github.io/"

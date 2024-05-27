@@ -1,0 +1,7 @@
+<footer class="footer">
+  <small>
+    {{ range last 1 .Site.RegularPages }}
+    <p>&copy; Johns Hopkins University. All rights reserved.</p><p class="metadata">Site last updated {{ now.Format "2 Jan 2006" }}.</p>
+    {{ end }}
+  </small>
+</footer>

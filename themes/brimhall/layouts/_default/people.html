@@ -1,0 +1,48 @@
+{{ define "main" }}
+  <h1 class="page-title">{{ .Page.Title | markdownify | safeHTML }}</h1>
+  <div class="post">
+    <h3 id="faculty">Faculty</h3>
+    <ul id="faculty-listing">
+        {{ range .Site.Data.people.faculty }}
+        <li>
+            <img class="faculty-pic" src=" {{ .img }}"/>
+            <p>
+            {{ .name }} <br/>
+            {{ .title }} <br/>
+            <a href="mailto:{{ .email}}">{{ .email }}</a> <br/>
+            <a href="{{ .website }}"> {{ .website }}</a>
+            </p>
+        </li>
+        {{ end }}
+    </ul>
+
+    <h3 id="students">Students</h3>
+    <ul id="student-listing">
+        {{ range .Site.Data.people.students }}
+        <li>
+            <img class="student-pic" src=" {{ .img }}"/>
+            <p>
+            {{ .name }} <br/>
+            {{ .title }} <br/>
+            <a href="mailto:{{ .email}}">{{ .email }}</a> <br/>
+            <a href="{{ .website }}"> {{ .website }}</a>
+            </p>
+        </li>
+        {{ end }}
+    </ul>
+
+    <h3 id="alumni">Alumni</h3>
+    <ul id="alumni-listing">
+        {{ range .Site.Data.people.alumni }}
+        <li>
+            {{ .name }} <br/>
+            {{ .graduation }} <br/>
+            <a href="{{ .website }}"> {{ .website }}</a>
+        </li>
+        {{ end }}
+    </ul>
+
+    {{ .Content }}
+
+  </div>
+{{ end }}

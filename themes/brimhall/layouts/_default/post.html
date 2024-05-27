@@ -1,0 +1,26 @@
+{{ define "main" }}
+  <article class="post">
+    <h1 class="post-title">{{ .Page.Title | markdownify }}</h1>
+    <time class="post-date" datetime="{{ .Page.Date.Format "2006-01-02T15:04:05Z07:00" }}">{{ .Page.Date.Format "2 Jan 2006" }}</time>
+    {{ .Content }}
+  </article>
+
+  {{ if gt (len (.Site.RegularPages.Related . )) 0 }}
+  {{ $related := .Site.RegularPages.Related . | first 3 }}
+  {{ with $related }}
+  <aside class="related">
+    <h3>Related posts</h3>
+    <ul class="related-posts">
+      {{ range . }}
+        <li>
+          <a href="{{ .RelPermalink }}">
+            {{ .Title | markdownify | safeHTML }}
+            <small><time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">{{ .Date.Format "2 Jan 2006" }}</time></small>
+          </a>
+        </li>
+      {{ end }}
+    </ul>
+  </aside>
+  {{ end }}
+  {{ end }}
+{{ end }}

@@ -1,0 +1,25 @@
+{{ define "main" }}
+  <h1 class="page-title">{{ .Page.Title | markdownify | safeHTML }}</h1>
+  <div class="posts">
+    
+    {{ .Content }}
+
+    {{ range .Site.Data.press }}
+    <article class="post">
+      <h3 class="post-title">
+          {{ .title | markdownify }}
+      </h3>
+
+      <div class="post-metadata"> {{ dateFormat "2 Jan 2006" .date }} &middot; {{ .publisher }}</a> &middot; {{ .authors }}</div>
+      
+      {{ .summary | markdownify }}
+
+      {{ if .link }}
+        <div class="post-metadata-footer"><a href=" {{ .link }} ">Article</a></div>
+      {{ end }}
+
+    </article>
+
+    {{ end }}
+  </div>
+{{ end }}
