@@ -41,7 +41,7 @@ us know about any interesting implementation details. If there is
 functionality you weren't able to get working completely, this is
 a good place to mention that.
 
-We expect you to follow the [style guidelines](style.html).
+We expect you to follow the [style guidelines](/resources/style).
 However, the expectations for function length will be relaxed considerably
 for your assembly language code. It is not unusual for an assembly language
 function to have 100 or more lines of code. In the reference solution,
