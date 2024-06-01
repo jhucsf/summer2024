@@ -27,15 +27,12 @@ Milestone 1 (15% of the assignment grade):
   - `operator-()` member function (unary minus)
   - `to_hex()` member function (conversion to base-16)
 
-<div class='admonition danger'>
-  <div class='title'>Important!</div>
-  <div class='content' markdown='1'>
+### Important!
+
 Milestone 1 is intended as a warm-up, since you might not have
 written C++ code in a while. For that reason, it is a very
 lightweight milestone. Milestone 2 will require significantly
 more work.
-  </div>
-</div>
 
 Milestone 2 (85% of the assignment grade):
 
@@ -51,21 +48,18 @@ Milestone 2 (85% of the assignment grade):
 * Comprehensiveness and quality of your unit tests (10%)
 * Design and coding style (10%)
 
-<div class='admonition danger'>
-  <div class='title'>Important!</div>
-  <div class='content' markdown='1'>
+### Important!
+
 Multiplication (`operator*`) is somewhat challenging, and is worth
 at most 1.5% of the assignment grade.  Division (`operator/`) and conversion to
 base-10 (`to_dec()`) are even more challenging, and each is worth at most 0.75% of the
 overall assignment grade. You should work on all of these only after implementing
 and testing the other member functions.
-  </div>
-</div>
 
 ## Getting started
 
-To get started, download [csf\_assign01.zip](csf_assign01.zip), which contains the
-skeleton code for the assignment, and then unzip it.
+To get started, download [csf_assign01.zip](/summer2024/assign/csf_assign01.zip),
+which contains the skeleton code for the assignment, and then unzip it.
 
 Note that you can download the zipfile from the command line using the `curl` program:
 
@@ -112,24 +106,24 @@ The vector of `uint64_t` elements is the "bit string". If you think about the
 magnitude of a `BigInt` value as an arbitrary integer, the bit string specifies
 that value in base 2. The first element contains the least-significant 64 bits
 of the bit string, the second element contains the next 64 bits of the bit string,
-etc. For example, consider the integer value $$2^{64} = 18,446,744,073,709,551,616$$.
+etc. For example, consider the integer value 2^64 = 18,446,744,073,709,551,616.
 This value is represented in base 2 as
 
-> $$10000000000000000000000000000000000000000000000000000000000000000$$
+`10000000000000000000000000000000000000000000000000000000000000000`
 
 which is one followed by 64 zeroes.  In hexadecimal (base 16), this value is
 represented as
 
-> $$10000000000000000$$
+`10000000000000000`
 
 which is 1 followed by 16 zeroes.  Note that each hex "digit" represents
 4 bits (base-2 "digits".)
 
-Since a `uint64_t` value contains exactly 64 bits, the value $$2^{64}$$ could
+Since a `uint64_t` value contains exactly 64 bits, the value 2^64 could
 be represented as two `uint64_t` values: the less-significant would have
 the value 0 (representing the lowest 64 bits, all of which are 0), and
 the more-significant would have the value 1 (meaning that there is a 1
-in the $$2^{64}$$ place in the base-2 representation.
+in the 2^64 place in the base-2 representation).
 
 In general, because a `BigInt` object contains a vector of `uint64_t` values,
 with no arbitrary limit on the number of elements the vector can hold,
@@ -140,15 +134,13 @@ Since integers can be negative or non-negative, a `BigInt` will also have a `boo
 value which is set to true if the `BigInt` is negative, false if non-negative.
 This makes `BigInt` a sign/magnitude integer representation.
 
-<div class='admonition info'>
-  <div class='title'>Important!</div>
-  <div class='content' markdown='1'>
+### Important!
+
 `BigInt` values do not use two's complement. Two `BigInt` values
 with the same magnitude and opposing signs will differ only in the
 `bool` value indicating their sign. The representations of their
 magnitudes will be exactly the same.
-  </div>
-</div>
+
 
 ## Your tasks
 
@@ -202,8 +194,8 @@ If you have a problem that you think requires floating point, there is
 definitely a way to solve the problem without floating point. For example,
 if you need to compute an arbitrary power of 2, don't use the `pow` function.
 Instead, left shift the value `1UL` the appropriate number of places.
-E.g., `1UL << n` will be equal to $$2^{n}$$ as long as `n` is in the range
-$$0 \ldots 63$$.
+E.g., `1UL << n` will be equal to `2^n` as long as `n` is in the range
+`0...63`.
 
 This assignment is about integers.
 
@@ -241,10 +233,10 @@ You aren't required to implement these specific private member functions
 You should implement addition of magnitudes using the "grade school" algorithm.
 Think about each element of the vector of `uint64_t` values in a `BigInt`
 object as a "digit". The `uint64_t` values just happen to be digits in base
-$$2^{64}$$.
+`2^64`.
 
 Start by adding the "digits" in the rightmost column to compute the rightmost
-digit of the result. Note that the computed "digit" is correct modulo $$2^{64}$$.
+digit of the result. Note that the computed "digit" is correct modulo `2^64`.
 If the addition of the column values overflows, you will need to carry a 1 into
 the next column (to the left.) This is exactly analogous to base-10 addition.
 For example:
@@ -256,9 +248,9 @@ For example:
   ??
 ```
 
-When adding the digits in the right column ($$6 + 7$$), the sum is $$13$$,
+When adding the digits in the right column (`6 + 7`), the sum is `13`,
 which modulo the base (10) is 3. So, the rightmost digit of the sum is 3.
-However, the addition overflows, since $$13$$ can't be represented as a
+However, the addition overflows, since `13` can't be represented as a
 single base-10 digit. So, we will need to carry a 1 into the next
 column.
 
@@ -272,17 +264,14 @@ if (sum < a) {
 }
 ```
 
-<div class='admonition danger'>
-  <div class='title'>Warning</div>
-  <div class='content' markdown='1'>
+
+### Warning!
 An additional way that column values could overflow is if a 1 is being
 carried in from the previous column. As a base-10 analogy, adding
-$$7 + 2$$ wouldn't normally cause an overflow. However, if a 1 is carried
-in from the previous column, then $$7 + 2$$ *will* cause an overflow,
-since $$7 + 2 + 1 = 10$$.  You will need to think carefully about how this
+`7 + 2` wouldn't normally cause an overflow. However, if a 1 is carried
+in from the previous column, then `7 + 2` *will* cause an overflow,
+since `7 + 2 + 1 = 10`.  You will need to think carefully about how this
 type of situation should be handled when dealing with `uint64_t` "digits".
-  </div>
-</div>
 
 One concern when implementing addition is that the two `BigInt` values being
 added might have different numbers of `uint64_t` values in their bit string
@@ -298,8 +287,8 @@ You can handle negative values as follows:
   then the result has a magnitude that is the sum of the magnitudes of
   the operands, and the sign will be the same as the sign of both operands.
 * In a "mixed" addition (one operand is non-negative and one operand is
-  negative), the magnitude of the result is the difference $$a-b$$, where $$a$$
-  is the magnitude of the value with the larger magnitude, and $$b$$ is the
+  negative), the magnitude of the result is the difference `a-b`, where `a`
+  is the magnitude of the value with the larger magnitude, and `b` is the
   magnitude of the value with the smaller magnitude. The sign of the result
   is the same as the sign of the operand with the larger magnitude.
 
@@ -312,11 +301,11 @@ The two-operand subtraction operator `operator-(const BigInt &)` can be
 implemented by adding the negation of the right-hand operand to the
 value of the left hand operand. In other words, you can compute
 
-$$a - b$$
+`a - b`
 
 as
 
-$$a + -b$$
+`a + -b`
 
 ### Subtraction of magnitudes
 
@@ -335,8 +324,8 @@ Again, as a base-10 analogy, in the subtraction
   ??
 ```
 
-the rightmost column difference $$6-7$$ requires borrowing 1 from the next
-column since $$7$$ is greater than $$6$$.
+the rightmost column difference `6-7` requires borrowing 1 from the next
+column since `7` is greater than `6`.
 
 ### Left shift
 
@@ -362,7 +351,7 @@ manipulators will likely be helpful.
 
 Don't forget that a negative value needs a leading `-` sign.
 Also, make sure there are no unnecessary leading `0` digits. (Although,
-the value equal to $$0$$ should be coverted to the string "`0`".)
+the value equal to `0` should be coverted to the string "`0`".)
 
 ### Multiplication
 
@@ -370,13 +359,13 @@ One way to implement multiplication is to break down one of the operands
 into powers of 2, multiply the other operand by each of those powers of 2,
 and add those partial products together.
 
-For example, $$37 = 32 + 4 + 1 = 2^{5} + 2^{2} + 2^{0}$$. The product
-$$37 \times m$$ could therefore be computed as
+For example, `37 = 32 + 4 + 1 = 2^5 + 2^2 + 2^0`. The product
+`37 * m` could therefore be computed as
 
-$$2^{5} \times m + 2^{2} \times m + 2^{0} \times m$$
+`2^5 * m + 2^2 * m + 2^0 * m`
 
-Note that left-shifting a value by $$n$$ is the same as multiplying it
-by $$2^{n}$$. So, if you have implemented the `is_bit_set()`, `operator<<`,
+Note that left-shifting a value by `n` is the same as multiplying it
+by `2^n`. So, if you have implemented the `is_bit_set()`, `operator<<`,
 and `operator+` member functions, you should have everything you need to implement
 multiplication.
 
@@ -386,15 +375,15 @@ signs of the operands.
 ### Division
 
 A simple way to implement division is using binary search. In computing
-$$q = n / m$$, where $$n$$ is the dividend and $$m$$ is the divisor,
-we can note that the quotient $$q$$ will be in the range $$0 \ldots n$$, inclusive.
-So, initially, $$0$$ is the lower bound of the range, and $$n$$
+`q = n / m`, where `n` is the dividend and `m` is the divisor,
+we can note that the quotient `q` will be in the range `0..n`, inclusive.
+So, initially, `0` is the lower bound of the range, and `n`
 is the upper bound of the range. Repeatedly, we can choose a
-possible value of $$q$$ midway between the lower and upper bounds.
-Depending on whether or not $$q \times m$$ is greater than $$n$$,
+possible value of `q` midway between the lower and upper bounds.
+Depending on whether or not `q * m` is greater than `n`,
 we can revise either the lower or upper search bound. Eventually,
 the range should collapse to a single value, which is the computed
-quotient $$q$$.
+quotient `q`.
 
 Note that this is not a particularly fast way to implement division, but
 it is adequate for this assignment.
