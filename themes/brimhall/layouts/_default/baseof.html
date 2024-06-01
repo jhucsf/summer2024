@@ -7,10 +7,12 @@
 
     <div class="container content">
       <header class="masthead">
-        <picture class="jhu-shield">
-          <source srcset="/img/university.shield.white.svg" media="(prefers-color-scheme:dark)"/>
-          <img class="jhu-shield" src="/img/university.shield.black.svg"/>
-        </picture>
+        <a href="https://www.jhu.edu">
+          <picture class="jhu-shield">
+            <source srcset="/img/university.shield.white.svg" media="(prefers-color-scheme:dark)"/>
+            <img class="jhu-shield" src="/img/university.shield.black.svg"/>
+          </picture>
+        </a>
         <h1 class="masthead-title">
           {{ .Site.Title | markdownify | plainify }}
         </h1>
