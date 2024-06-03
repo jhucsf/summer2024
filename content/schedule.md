@@ -4,8 +4,8 @@ title: "Schedule"
 ---
 
 Readings are from:
-* *CSAPP*: Bryant and O'Hallaron, [Computer Systems: A Programmer's Perspective, 3rd ed](https://csapp.cs.cmu.edu/).
-* *P&amp;H*: Patterson and Hennessy, [Computer Organization and Design (RISC-V edition)](https://learning.oreilly.com/library/view/computer-organization-and/9780128122761/)
+* *CSAPP:* Bryant and O'Hallaron, [Computer Systems: A Programmer's Perspective, 3rd ed](https://csapp.cs.cmu.edu/).
+* *P&amp;H:* Patterson and Hennessy, [Computer Organization and Design (RISC-V edition)](https://learning.oreilly.com/library/view/computer-organization-and/9780128122761/)
 
 *Important:* do the reading before you come to class.
 

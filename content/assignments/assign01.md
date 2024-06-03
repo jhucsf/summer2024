@@ -58,7 +58,7 @@ and testing the other member functions.
 
 ## Getting started
 
-To get started, download [csf_assign01.zip](/summer2024/assign/csf_assign01.zip),
+To get started, download [csf_assign01.zip](/assign/csf_assign01.zip),
 which contains the skeleton code for the assignment, and then unzip it.
 
 Note that you can download the zipfile from the command line using the `curl` program:

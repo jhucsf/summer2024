@@ -58,7 +58,7 @@ Any updates will be mentioned in class and on Slack.
 </div>
 </div>
 
-## Lectures and Office Hours
+## Lectures
 Lectures are held on Zoom from 10:00am to 11:45am EDT MWF. It is expected that
 students have microphones and cameras on to facilitate discussion.
 
@@ -66,9 +66,21 @@ students have microphones and cameras on to facilitate discussion.
 * <em>Meeting ID:</em> 994 3635 9812
 * <em>Passcode:</em> 797378
 
-Instructor-led office hours are held 9:00am to 10:00am EDT MWF or by
-appointment. Course assistant office hours are forthcoming and will be announced
-on Slack.
+## Office Hours
+
+We have three sets of office hours for you this semester:
+
+* *Brennon:* 9:00am to 10:00am EDT MWF (same link as lecture) or by
+  appointment. Send him a Slack message or email by the night before to let him
+  know you're coming.
+
+* *Ishan:* 9:00-11:00am EDT Sundays via Zoom
+  (https://JHUBlueJays.zoom.us/j/3375929174).
+
+* *Emma:* 2:00-4:00pm EDT Thursdays via Zoom
+  (https://JHUBlueJays.zoom.us/j/8435753651).
+
+It's possible that we change office hours. If so we will let you know in Slack.
 
 ## Resources
 * <em>Course Website:</em> https://jhucsf.github.io/summer2024 (you are here!)
