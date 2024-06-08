@@ -29,7 +29,7 @@ Review materials for Exam 3:
 
 ## x86-64 assembly language exercises
 
-* [Assembly language mini-exercises](/resources/assemblyMini)
+* [Assembly language mini-exercises](https://jhucsf.github.io/spring2024/resources/assemblyMini.html)
 * [Assembly language exercise](/resources/assembly), [solution](/resources/asmExerciseSoln.zip)
 * [Assembly language exercise 2 (more challenging)](/resources/assembly2)
 
