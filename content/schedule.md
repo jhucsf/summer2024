@@ -28,7 +28,7 @@ Readings are from:
 | 17 June          | Program optimization (basic techniques)                                                                      | CSAPP 5.1–5.8        | A2 MS2 due |
 |                  | Exam 1 review session                                                                                        |
 | *19 June*        | *Juneteenth Holiday -- no class*                                                                             |
-| 21 June          | Guest lecture: [Michael Greenburg,](michael_greenburg@byu.edu) [BYU Research Computing](https://rc.byu.edu/contact#staff_user_services) | | Exam 1 due |
+| 21 June          | Guest lecture: [Michael Greenburg,](mailto:michael_greenburg@byu.edu) [BYU Research Computing](https://rc.byu.edu/contact#staff_user_services) | | Exam 1 due |
 | <hr/> | <hr/> | <hr/> | <hr/> |
 | 24 June          | Pipelines                                                                                                    | P&amp;H 4.5–4.7      | A2 MS3 due |
 |                  | Program optimization (ILP, memory, profiling)                                                                | CSAPP 5.9–5.14       |
