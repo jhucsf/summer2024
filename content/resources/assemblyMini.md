@@ -3,8 +3,6 @@ layout: page
 title: "Assembly language mini exercises"
 ---
 
-# Assembly language mini exercises
-
 This page has some suggested assembly language mini exercises.
 
 Starter project containing `Makefile` and hello world example program: [asmMini.zip](asmMini.zip)

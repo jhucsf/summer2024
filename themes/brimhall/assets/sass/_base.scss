@@ -344,13 +344,14 @@ body hr {
 }
 
 body blockquote {
-  border-left: .25em solid #dfe2e5;
-  color: #6a737d;
+  // border-left: .25em solid #dfe2e5;
+  // color: #6a737d;
   padding: 0 1em;
+  font-style: italic;
 
-  @media (prefers-color-scheme: dark) {
-    border-left: .25em solid #6a737d;
-  }
+  // @media (prefers-color-scheme: dark) {
+  //   border-left: .25em solid #6a737d;
+  // }
 }
 
 body blockquote>:first-child {
@@ -448,41 +449,77 @@ body dl dd {
 }
 
 body table {
-  display: block;
   overflow: auto;
-  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 body table th {
   font-weight: 600;
 }
 
-body table td,
 body table th {
-  border: 1px solid #dfe2e5;
+  border-top: 1.5px solid $body-color;
+  border-bottom: 1px solid $body-color;
   padding: 6px 13px;
 
   @media (prefers-color-scheme: dark) {
-    border: 1px solid #323639;
+    border-top: 1.5px solid $body-color-dark;
+    border-bottom: 1px solid $body-color-dark;
   }
+}
+
+body table tbody tr:last-child {
+  border-bottom: 1.5px solid $body-color;
+
+  @media (prefers-color-scheme: dark) {
+    border-bottom: 1.5px solid $body-color-dark;
+  }
+}
+
+body table tbody hr {
+  border-bottom: 1px solid $body-color;
+  margin: 0;
+  height: 0;
+  width: 100%;
+
+  @media (prefers-color-scheme: dark) {
+    border-bottom: 1x solid $body-color-dark;
+  }
+}
+
+body table td {
+  // border-top: 1px solid $body-color;
+  // border-bottom: 1px solid $body-color;
+  padding: 6px 13px;
+
+  // @media (prefers-color-scheme: dark) {
+  //   border-top: 1px solid $body-color-dark;
+  //   border-bottom: 1px solid $body-color-dark;
+  //}
+}
+
+body table td:has(hr) {
+  padding: 6px 0px;
 }
 
 body table tr {
   background-color: #fff;
-  border-top: 1px solid #c6cbd1;
+  //border-top: 1px solid $body-color;
 
   @media (prefers-color-scheme: dark) {
     background-color: $body-bg-dark;
+    //border-top: 1px solid $body-color-dark;
   }
 }
 
-body table tr:nth-child(2n) {
-  background-color: #f6f8fa;
+// body table tr:nth-child(2n) {
+//   background-color: #f6f8fa;
 
-  @media (prefers-color-scheme: dark) {
-    background-color: $code-bg-dark;
-  }
-}
+//   @media (prefers-color-scheme: dark) {
+//     background-color: $code-bg-dark;
+//   }
+// }
 
 body img {
   background-color: #fff;

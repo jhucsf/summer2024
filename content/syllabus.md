@@ -14,7 +14,7 @@ title: "Syllabus"
 </div>
 </div>
 
-*Please note that this syllabus could be updated during the semester.*
+Please note that this syllabus could be updated during the semester.
 Any updates will be mentioned in class and on Slack.
 
 <div class="twocol">
@@ -75,10 +75,10 @@ We have three sets of office hours for you this semester:
   know you're coming.
 
 * *Ishan:* 9:00-11:00am EDT Sundays via Zoom
-  (https://JHUBlueJays.zoom.us/j/3375929174).
+  ([https://JHUBlueJays.zoom.us/j/3375929174](https://JHUBlueJays.zoom.us/j/3375929174)).
 
 * *Emma:* 2:00-4:00pm EDT Thursdays via Zoom
-  (https://JHUBlueJays.zoom.us/j/8435753651).
+  ([https://JHUBlueJays.zoom.us/j/8435753651](https://JHUBlueJays.zoom.us/j/8435753651)).
 
 It's possible that we change office hours. If so we will let you know in Slack.
 
@@ -206,7 +206,7 @@ Average     | Letter grade | Performance
 70–73       | C-           | Satisfactory
 67–70       | D+           | Passing
 60–67       | D            | Passing
-below 60    | F            | Failture
+below 60    | F            | Failure
 
 ## Key Dates
 
@@ -310,7 +310,7 @@ If you have concerns about a specific student, please contact:
 
 * For [emergencies](https://security.jhu.edu/index.html) (threat to self or others): 410-516-4600 or 911
 * For on-scene mental health support: BHCST at 410-516-4600 
-* For undergraduates: Student Outreach & Support at 410-516-7857 or <mailto:studentoutreach@jhu.edu> (undergraduates) 
+* For undergraduates: Student Outreach & Support at 410-516-7857 or (studentoutreach@jhu.edu)[mailto:studentoutreach@jhu.edu] (undergraduates) 
 * For KSAS Graduate Students: [Renee Eastwood](mailto:rseitz5@jhu.edu), Assistant Dean for Graduate and Postdoctoral Academic and Student Affairs
 * For WSE Graduate Students:  [Megan Barrett](mailto:mmcgui15@jh.edu), Assistant Dean for Engineering Student Affairs
 
@@ -332,9 +332,9 @@ Report any violations you witness to the instructor. You can also contact:
 
 * For undergraduates: the associate dean of student conduct (or designee)
   by calling the Office of the Dean of Student Life at 410-516-8208 or
-  via email at <mailto:studentconduct@jhu.edu>
-* For KSAS Graduate Students: <mailto:rseitz5@jh.edu>
-* For WSE Graduate Students:  <mailto:christinekavanagh@jhu.edu>
+  via email at [studentconduct@jhu.edu](mailto:studentconduct@jhu.edu)
+* For KSAS Graduate Students: [rseitz5@jh.edu](mailto:rseitz5@jh.edu)
+* For WSE Graduate Students: [christinekavanagh@jhu.edu](mailto:christinekavanagh@jhu.edu)
 
 For undergraduate students, the
 adjudication procedures can be found online
@@ -367,12 +367,13 @@ communication seriously and will seek mutually acceptable resolutions
 and accommodations.  Reporting will never impact your course grade.
 You may also share concerns with the department chair, the Director of
 Undergraduate Studies (WSE Department Heads and DUSes), the WSE Assistant
-Dean for Diversity and Inclusion (Darlene Saporu, <mailto:dsaporu@jhu.edu>),
-the KSAS Assistant Dean for Diversity and Inclusion (Araceli Frias,
-<mailto:afrias3@jhu.edu>) or the Office of Institutional Equity (<mailto:oie@jhu.edu>).
-In handling reports, people will protect your privacy as much as possible,
-but faculty and staff are required to officially report information for
-some cases (e.g., sexual harassment).
+Dean for Diversity and Inclusion (Darlene Saporu,
+[dsaporu@jhu.edu](mailto:dsaporu@jhu.edu)), the KSAS Assistant Dean for
+Diversity and Inclusion (Araceli Frias,
+[afrias3@jhu.edu](mailto:afrias3@jhu.edu)) or the Office of Institutional Equity
+([oie@jhu.edu](mailto:oie@jhu.edu)). In handling reports, people will protect
+your privacy as much as possible, but faculty and staff are required to
+officially report information for some cases (e.g., sexual harassment).
 
 ## How to Succeed in this Class
 * Find teammates for pair assignments early. The ideal scenario is that everyone
