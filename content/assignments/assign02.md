@@ -58,7 +58,7 @@ etc.  This applies to both your C code and your assembly code.
 
 ## Getting started
 
-To get started, download [csf\_assign02.zip](csf_assign02.zip) and
+To get started, download [csf\_assign02.zip](/assign/csf_assign02.zip) and
 unzip it.
 
 ## Grading breakdown
