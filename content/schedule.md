@@ -10,7 +10,7 @@ Readings are from:
 *Important:* do the reading before you come to class.
 
 | Date             | Topic                                                                                                        | Reading              | Assignment |
-|------------------|----------------------------------------------------------------------------------------------------|----------------------|------------|
+|:-----------------|:---------------------------------------------------------------------------------------------------|:---------------------|:-----------|
 | 3 June           | [Course overview, binary data representation review](/lectures/lecture01-public.pdf)                         | CSAPP 1.1-1.9        |
 |                  | [Data representation, addresses](/lectures/lecture02-public.pdf)                                             | CSAPP 2.1            |
 | 5 June           | [Integer representation](/lectures/lecture03-public.pdf)                                                     | CSAPP 2.2            | A1 MS1 due |

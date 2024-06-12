@@ -194,7 +194,7 @@ instruction quizzes.
 Note that upper bounds are exclusive and lower bounds are inclusive.
 
 Average     | Letter grade | Performance
------------ | ------------ | -----------
+----------: | :----------: | :----------
 97 or above | A+           | Excellent
 93–97       | A            | Excellent
 90–93       | A-           | Excellent

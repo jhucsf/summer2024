@@ -40,7 +40,7 @@ Please see the [Resources](/resources) page for information on setting
 up an x86-64 Linux development environment. (There are a number of good options.)
 
 | Assignment                                                 | Type | Due                     |
-|------------------------------------------------------------|------|-------------------------|
+|:-----------------------------------------------------------|:-----|:------------------------|
 | [Assignment 1: Big Integers](/assignments/assign01)        | Pair | A1 MS1 due Wed, 5 June  |
 |                                                            |      | A1 MS2 due Mon, 10 June |
 | [Assignment 2: Pixel Graphics](/assignments/assign02)      | Pair | A2 MS1 due Wed, 12 June |

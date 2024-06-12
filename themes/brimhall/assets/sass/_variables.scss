@@ -22,8 +22,21 @@ $blue-dark: #58a6ff;
 
 @font-face {
     font-family: "cochineal";
+    font-weight: 600;
+    src: url('/summer2024/fonts/cochineal-bold.otf');
+}
+
+@font-face {
+    font-family: "cochineal";
     font-style: italic;
     src: url('/summer2024/fonts/cochineal-italic.otf');
+}
+
+@font-face {
+    font-family: "cochineal";
+    font-style: italic;
+    font-weight: 600;
+    src: url('/summer2024/fonts/cochineal-bolditalic.otf');
 }
 
 $root-font-family: "cochineal", serif; //-apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
