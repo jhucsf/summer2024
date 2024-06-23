@@ -30,19 +30,19 @@ Readings are from:
 | *19 June*        | *Juneteenth Holiday -- no class*                                                                             |
 | 21 June          | Guest lecture: [Michael Greenburg,](mailto:michael_greenburg@byu.edu) [BYU Research Computing](https://rc.byu.edu/contact#staff_user_services) | | Exam 1 due |
 | <hr/> | <hr/> | <hr/> | <hr/> |
-| 24 June          | Pipelines                                                                                                    | P&amp;H 4.5–4.7      | A2 MS3 due |
+| 24 June          | [Pipelines](/lectures/lecture13-public.pdf)                                                                  | P&amp;H 4.5–4.7      | A2 MS3 due |
 |                  | Program optimization (ILP, memory, profiling)                                                                | CSAPP 5.9–5.14       |
-| 26 June          | Memory hierarchy                                                                                             | CSAPP 6.1–6.3        | A3 MS1 due |
-|                  | Cache policies                                                                                               | CSAPP 6.4            |
+| 26 June          | [Memory hierarchy](/lectures/lecture15-public.pdf)                                                           | CSAPP 6.1–6.3        | A3 MS1 due |
+|                  | [Cache policies](/lectures/lecture16-public.pdf)                                                             | CSAPP 6.4            |
 | 28 June          | Caches and program execution                                                                                 | CSAPP 6.5            |
-|                  | Linking basics, symbols, relocations, executables, loading                                                   | CSAPP 7.1–7.9        |
+|                  | [Linking basics, symbols, relocations, executables, loading](/lectures/lecture18-public.pdf)                 | CSAPP 7.1–7.9        |
 | <hr/> | <hr/> | <hr/> | <hr/> |
-| 1 July           | Dynamic linking, shared libraries, PIC, dynload.zip                                                          | CSAPP 7.10–7.15      |
-|                  | Exceptions, Processes                                                                                        | CSAPP 8.1–8.4, 8.7   |
-| 3 July           | Signals, signals.zip                                                                                         | CSAPP 8.5–8.6        | A3 MS2 due |
-|                  | Virtual memory                                                                                               | CSAPP 9.1–9.3        |
-| 5 July           | Memory management, address translation                                                                       | CSAPP 9.4–9.7        | A3 MS3 due |
-|                  | Memory mapping, dynamic memory allocation                                                                    | CSAPP 9.8, 9.9, 9.11 |
+| 1 July           | [Dynamic linking, shared libraries, PIC,](/lectures/lecture19-public.pdf) [dynload.zip](/lectures/dynload.zip) | CSAPP 7.10–7.15      |
+|                  | [Exceptions, Processes](/lectures/lecture20-public.pdf)                                                      | CSAPP 8.1–8.4, 8.7   |
+| 3 July           | [Signals,](/lectures/lecture21-public.pdf) [signals.zip](/lectures/signals.zip)                              | CSAPP 8.5–8.6        | A3 MS2 due |
+|                  | [Virtual memory](/lectures/lecture22-public.pdf)                                                             | CSAPP 9.1–9.3        |
+| 5 July           | [Memory management, address translation](/lectures/lecture23-public.pdf)                                     | CSAPP 9.4–9.7        | A3 MS3 due |
+|                  | [Memory mapping, dynamic memory allocation](/lectures/lecture24-public.pdf)                                  | CSAPP 9.8, 9.9, 9.11 |
 | <hr/> | <hr/> | <hr/> | <hr/> |
 | 8 July           | Exam 2 review session                                                                                        |
 | 10 July          | Unix I/O, files                                                                                              | CSAPP 10.1–10.11     | Exam 2 due |
