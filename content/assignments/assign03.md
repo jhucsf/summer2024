@@ -238,17 +238,17 @@ After the simulation is complete, your cache simulator is expected to
 print the following summary information in **exactly** the format given
 below:
 
-<div class="highlighter-rouge"><pre>
-Total loads: <i>count</i>
-Total stores: <i>count</i>
-Load hits: <i>count</i>
-Load misses: <i>count</i>
-Store hits: <i>count</i>
-Store misses: <i>count</i>
-Total cycles: <i>count</i>
-</pre></div>
+```
+Total loads: count
+Total stores: count
+Load hits: count
+Load misses: count
+Store hits: count
+Store misses: count
+Total cycles: count
+```
 
-The <tt><i>count</i></tt> value is simply an occurrence count.  As a concrete example,
+The `count` value is simply an occurrence count.  As a concrete example,
 here is an example invocation of the program on one of the example traces, `gcc.trace`:
 
 ```
