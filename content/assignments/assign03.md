@@ -295,13 +295,13 @@ If the configuration parameters are invalid, the program should
 
 Here are some traces you can use for testing and empirical evaluation:
 
-* [gcc.trace](assign03/gcc.trace)
-* [read01.trace](assign03/read01.trace)
-* [read02.trace](assign03/read02.trace)
-* [read03.trace](assign03/read03.trace)
-* [swim.trace](assign03/swim.trace)
-* [write01.trace](assign03/write01.trace)
-* [write02.trace](assign03/write02.trace)
+* [gcc.trace](/assign/assign03/gcc.trace)
+* [read01.trace](/assign/assign03/read01.trace)
+* [read02.trace](/assign/assign03/read02.trace)
+* [read03.trace](/assign/assign03/read03.trace)
+* [swim.trace](/assign/assign03/swim.trace)
+* [write01.trace](/assign/assign03/write01.trace)
+* [write02.trace](/assign/assign03/write02.trace)
 
 Your can download these trace files easily from the command line using
 `curl`, e.g.
