@@ -307,7 +307,7 @@ Your can download these trace files easily from the command line using
 `curl`, e.g.
 
 ```
-curl -O https://jhucsf.github.io/fall2023/assign/assign03/read01.trace
+curl -O https://jhucsf.github.io/summer2024/assign/assign03/read01.trace
 ```
 
 (Note that in the `-O` option, it's the upper case letter "O", not the
