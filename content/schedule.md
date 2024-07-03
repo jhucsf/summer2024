@@ -9,6 +9,8 @@ Readings are from:
 
 *Important:* do the reading before you come to class.
 
+Lecture recordings are available [on YouTube](https://youtube.com/playlist?list=PLoWf56ngDQXdmtmW9CG9Trdvse-fTkfxS&si=nQYClpBGkX0Yndkz).
+
 | Date             | Topic                                                                                                        | Reading              | Assignment |
 |:-----------------|:---------------------------------------------------------------------------------------------------|:---------------------|:-----------|
 | 3 June           | [Course overview, binary data representation review](/lectures/lecture01-public.pdf)                         | CSAPP 1.1-1.9        |
