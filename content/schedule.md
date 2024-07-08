@@ -27,16 +27,16 @@ Lecture recordings are available [on YouTube](https://youtube.com/playlist?list=
 | 14 June          | [Assembly language in class exercise](/lectures/assembly-exercise-public.pdf)                                |
 |                  | [Code and data interactions, buffer overflows,](/lectures/lecture11-public.pdf) [buf.zip](/lectures/buf.zip) | CSAPP 3.10           |
 | <hr/> | <hr/> | <hr/> | <hr/> |
-| 17 June          | Program optimization (basic techniques)                                                                      | CSAPP 5.1–5.8        | A2 MS2 due |
+| 17 June          | [Program optimization (basic techniques)](/lectures/lecture12-public.pdf)                                    | CSAPP 5.1–5.8        | A2 MS2 due |
 |                  | Exam 1 review session                                                                                        |
 | *19 June*        | *Juneteenth Holiday -- no class*                                                                             |
 | 21 June          | Guest lecture: [Michael Greenburg,](mailto:michael_greenburg@byu.edu) [BYU Research Computing](https://rc.byu.edu/contact#staff_user_services) | | Exam 1 due |
 | <hr/> | <hr/> | <hr/> | <hr/> |
 | 24 June          | [Pipelines](/lectures/lecture13-public.pdf)                                                                  | P&amp;H 4.5–4.7      | A2 MS3 due |
-|                  | Program optimization (ILP, memory, profiling)                                                                | CSAPP 5.9–5.14       |
+|                  | [Program optimization (ILP, memory, profiling)](/lectures/lecture14-public.pdf)                              | CSAPP 5.9–5.14       |
 | 26 June          | [Memory hierarchy](/lectures/lecture15-public.pdf)                                                           | CSAPP 6.1–6.3        | A3 MS1 due |
 |                  | [Cache policies](/lectures/lecture16-public.pdf)                                                             | CSAPP 6.4            |
-| 28 June          | Caches and program execution                                                                                 | CSAPP 6.5            |
+| 28 June          | [Caches and program execution](/lectures/lecture17-public.pdf)                                               | CSAPP 6.5            |
 |                  | [Linking basics, symbols, relocations, executables, loading](/lectures/lecture18-public.pdf)                 | CSAPP 7.1–7.9        |
 | <hr/> | <hr/> | <hr/> | <hr/> |
 | 1 July           | [Dynamic linking, shared libraries, PIC,](/lectures/lecture19-public.pdf) [dynload.zip](/lectures/dynload.zip) | CSAPP 7.10–7.15      |

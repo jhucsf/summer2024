@@ -9,15 +9,15 @@ Assignment type: **Pair**, you may work with one partner
 
 ## Getting started
 
-Download [csf\_assign04.zip](csf_assign04.zip) and unzip it.
+Download [csf\_assign04.zip](/assign/csf_assign04.zip) and unzip it.
 
 You will modify the code in the `parsort.c` source file. You can compile
 the program using the provided `Makefile`.  To run the program,
 the invocation is
 
-<div class="highlighter-rouge"><pre>
-./parsort <i>filename</i> <i>threshold</i>
-</pre></div>
+```
+./parsort filename threshold
+```
 
 where *filename* is the file containing the data to sort, and *threshold*
 is the number of elements below (inclusive) which the program should use a
