@@ -47,8 +47,8 @@ Lecture recordings are available [on YouTube](https://youtube.com/playlist?list=
 |                  | [Memory mapping, dynamic memory allocation](/lectures/lecture24-public.pdf)                                  | CSAPP 9.8, 9.9, 9.11 |
 | <hr/> | <hr/> | <hr/> | <hr/> |
 | 8 July           | Exam 2 review session                                                                                        |
-| 10 July          | Unix I/O, files                                                                                              | CSAPP 10.1–10.11     | Exam 2 due |
-|                  | Networks, Internet Protocol                                                                                  | CSAPP 11.1–11.3      |
+| 10 July          | [Unix I/O, files](/lectures/lecture25-public.pdf)                                                            | CSAPP 10.1–10.11     | Exam 2 due |
+|                  | [Networks, Internet Protocol](/lectures/lecture26-public.pdf)                                                | CSAPP 11.1–11.3      |
 | 12 July          | Sockets, Application Protocols, sockets.zip                                                                  | CSAPP 11.4           | A4 due     |
 |                  | Network applications, HTTP, webclient.zip, webserver.zip                                                     | CSAPP 11.4–11.6      |
 | <hr/> | <hr/> | <hr/> | <hr/> |
