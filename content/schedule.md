@@ -49,16 +49,16 @@ Lecture recordings are available [on YouTube](https://youtube.com/playlist?list=
 | 8 July           | Exam 2 review session                                                                                        |
 | 10 July          | [Unix I/O, files](/lectures/lecture25-public.pdf)                                                            | CSAPP 10.1–10.11     | Exam 2 due |
 |                  | [Networks, Internet Protocol](/lectures/lecture26-public.pdf)                                                | CSAPP 11.1–11.3      |
-| 12 July          | Sockets, Application Protocols, sockets.zip                                                                  | CSAPP 11.4           | A4 due     |
-|                  | Network applications, HTTP, webclient.zip, webserver.zip                                                     | CSAPP 11.4–11.6      |
+| 12 July          | [Sockets, Application Protocols,](/lectures/lecture27-public.pdf) [sockets.zip](/lectures/sockets.zip)       | CSAPP 11.4           | A4 due     |
+|                  | [Network applications, HTTP,](/lectures/lecture28-public.pdf) [webclient.zip,](/lectures/webclient.zip) [webserver.zip](/lectures/webserver.zip)     | CSAPP 11.4–11.6      |
 | <hr/> | <hr/> | <hr/> | <hr/> |
-| 15 July          | Concurrency with pthreads, mt_webserver.zip                                                                  | CSAPP 12.3           |
-|                  | Thread synchronization, synch.zip                                                                            | CSAPP 12.4–12.5      |
-| 17 July          | Parallelism, concurrency issues, synch2.zip                                                                  | CSAPP 12.6–12.7      |
-|                  | Concurrency with processes, mp_webserver.zip                                                                 | CSAPP 12.1           |
+| 15 July          | [Concurrency with pthreads,](/lectures/lecture29-public.pdf) [mt_webserver.zip](/lectures/mt_webserver.zip)  | CSAPP 12.3           |
+|                  | [Thread synchronization,](/lectures/lecture30-public.pdf) [synch.zip](/lectures/synch.zip)                   | CSAPP 12.4–12.5      |
+| 17 July          | [Parallelism, concurrency issues,](/lectures/lecture31-public.pdf) [synch2.zip](/lectures/synch2.zip)        | CSAPP 12.6–12.7      |
+|                  | [Concurrency with processes,](/lectures/lecture32-public.pdf) [mp_webserver.zip](/lectures/mp_webserver.zip) | CSAPP 12.1           |
 | 19 July          | Guest Lecture: [Hari Kailad,](https://hkailad.com) [UMD MC2](https://cyber.umd.edu) | | A5 MS1 due |
 | <hr/> | <hr/> | <hr/> | <hr/> |
-| 22 July          | Concurrency with I/O multiplexing, iomux.zip                                                                 | CSAPP 12.2           |
+| 22 July          | [Concurrency with I/O multiplexing,](/lectures/lecture33-public.pdf) [iomux.zip](/lectures/iomux.zip)        | CSAPP 12.2           |
 | 24 July          | Exam 3 review session                                                                                        |                      | A5 MS2 due |
 | 26 July          | Slack day                                                                                                    |                      | Exam 3 due |
 
