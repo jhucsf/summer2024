@@ -40,7 +40,7 @@ Milestone 2:
 
 ## Getting Started
 
-Download [`csf_assign05.zip`](csf_assign05.zip) and unzip it.
+[Download `csf_assign05.zip`](/assign/csf_assign05.zip) and unzip it.
 
 To build all of the programs (unit test, clients, and server):
 
@@ -312,18 +312,18 @@ guaranteed that the value of the tuple will increase by 2. For example,
 let's say the initial value of the "Apples" tuple is 13. The following
 interleaving in the processing of requests from the two clients might occur:
 
-<div class='highlighter-rouge'><pre>
-<i>Client 1</i>                 <i>Client 2</i>                 <i>Explanation</i>
+```
+Client 1                 Client 2                 Explanation
 
-GET Fruit Apples                                  <i>Client 1 gets the value 13, pushes it</i>
-                         GET Fruit Apples         <i>Client 2 gets the value 13, pushes it</i>
-PUSH 1                                            <i>Client 1 pushes 1</i>
-ADD                                               <i>Pop 1, pop 13, push sum 14</i>
-SET Fruit Apples                                  <i>Client 1 sets the value 14</i>
-                         PUSH 1                   <i>Client 2 pushes 1</i>
-                         ADD                      <i>Pop 1, pop 13, push sum 14</i>
-                         SET Fruit Apples         <i>Client 2 sets the value 14</i>
-</pre></div>
+GET Fruit Apples                                  Client 1 gets the value 13, pushes it
+                         GET Fruit Apples         Client 2 gets the value 13, pushes it
+PUSH 1                                            Client 1 pushes 1
+ADD                                               Pop 1, pop 13, push sum 14
+SET Fruit Apples                                  Client 1 sets the value 14
+                         PUSH 1                   Client 2 pushes 1
+                         ADD                      Pop 1, pop 13, push sum 14
+                         SET Fruit Apples         Client 2 sets the value 14
+```
 
 Assuming each request is handled separately, and that the SET operations
 are executed using *auto commit* (more about this later), then this
@@ -426,16 +426,16 @@ as a single line of text and exits with exit code 0.
 
 Its invocation syntax is
 
-<div class='highlighter-rouge'><pre>
-./get_value <i>hostname</i> <i>port</i> <i>username</i> <i>table</i> <i>key</i>
-</pre></div>
+```
+./get_value hostname port username table key
+```
 
-Example run (user input in **bold**):
+Example run:
 
-<div class='highlighter-rouge'><pre>
-$ <b>./get_value localhost 5000 alice fruit apples</b>
+```
+$ ./get_value localhost 5000 alice fruit apples
 42
-</pre></div>
+```
 
 Your implementation should use `open_clientfd` to open a TCP connection
 to the server, then send LOGIN, GET, and TOP messages to log in and
@@ -451,9 +451,9 @@ the server responds to any of the request messages with an ERROR or
 FAILED response, the client should print (to `std::cerr`)
 a message of the form
 
-<div class='highlighter-rouge'><pre>
-Error: <i>message text</i>
-</pre></div>
+```
+Error: message text
+```
 
 and then exit with a non-zero exit code.
 
@@ -467,15 +467,15 @@ The `set_value` client sets the value associated with a specific key.
 
 Its invocation syntax is
 
-<div class='highlighter-rouge'><pre>
-./set_value <i>hostname</i> <i>port</i> <i>username</i> <i>table</i> <i>key</i> <i>value</i>
-</pre></div>
+```
+./set_value hostname port username table key value
+```
 
 Example run (user input in **bold**):
 
-<div class='highlighter-rouge'><pre>
-$ <b>./set_value localhost 5000 alice fruit apples 67</b>
-</pre></div>
+```
+$ ./set_value localhost 5000 alice fruit apples 67
+```
 
 As with the `get_value` client, use `open_clientfd` to create a TCP connection to
 the server. It should then send LOGIN, PUSH, and SET messages to set
@@ -498,16 +498,16 @@ in a transaction.
 
 Its invocation syntax is
 
-<div class='highlighter-rouge'><pre>
-./incr_value <i>hostname</i> <i>port</i> <i>username</i> <i>table</i> <i>key</i>
-./incr_value -t <i>hostname</i> <i>port</i> <i>username</i> <i>table</i> <i>key</i>
-</pre></div>
+```
+./incr_value hostname port username table key
+./incr_value -t hostname port username table key
+```
 
-Example run (user input in **bold**):
+Example run:
 
-<div class='highlighter-rouge'><pre>
-$ <b>./incr_value localhost 5000 alice fruit apples</b>
-</pre></div>
+```
+$ ./incr_value localhost 5000 alice fruit apples
+```
 
 Like the other clients, `incr_value` should use `open_clientfd` to create a TCP
 connection to the server.
@@ -569,9 +569,6 @@ cuases an `OperationException`.
 When a transaction ends, either by failing or succeeding, the connection
 returns to the default auto-commit mode.
 
-<div class='admonition info'>
-  <div class='title'>Avoiding Deadlock</div>
-  <div class='content' markdown='1'>
 The reason that transactions must use `pthread_mutex_trylock` rather than
 `pthread_mutex_lock` to lock tables is to avoid *deadlocks*. The problem is
 that when many clients are attempting to perform transactions, they may
@@ -586,8 +583,6 @@ to explicitly retry the transaction.
 Note that there is no worry about deadlock for clients in autocommit mode.
 For those clients, they are only ever waiting for, acquiring, and releasing
 one lock at a time. A deadlock situation always involves multiple locks.
-  </div>
-</div>
 
 The `Table` class has member functions `lock`, `unlock`, and `trylock`.
 These should call `pthread_mutex_lock`, `pthread_mutex_unlock`, and
@@ -674,16 +669,16 @@ Here's what the server terminal window might look like in order to
 communicate with the client. (Response messages typed into this
 terminal window are shown in **bold**):
 
-<div class='highlighter-rouge'><pre>
+```
 LOGIN alice
-<b>OK</b>
+OK
 GET fruit apples
-<b>OK</b>
+OK
 TOP
-<b>DATA 42</b>
+DATA 42
 BYE
-<b>OK</b>
-</pre></div>
+OK
+```
 
 Having netcat pretend to be a server is an excellent way to see how
 your client program is behaving.
@@ -702,29 +697,24 @@ Then have a client program connect to it from a different terminal window:
 ./get_value localhost 5002 alice fruit apples
 ```
 
-<div class='admonition info'>
-  <div class='title'>Note!</div>
-  <div class='content' markdown='1'>
 When you run the reference server, you will need to create at least
 one table before your client programs will be able to do anything
 interesting. You can use netcat for this. For example, assuming the
 server is listening for connections on port 5003 (user input
 in **bold**):
 
-<div class='highlighter-rouge'><pre>
-$ <b>nc localhost 5003</b>
-<b>LOGIN alice</b>
+```
+$ nc localhost 5003
+LOGIN alice
 OK
-<b>CREATE fruit</b>
+CREATE fruit
 OK
-<b>BYE</b>
+BYE
 OK
-</pre></div>
+```
 
 The example above would create a table named "fruit", allowing you
 to get, set, and increment values in that table using your clients.
-  </div>
-</div>
 
 The following screencast video walks through how to test the clients
 using the reference server and netcat:
@@ -740,17 +730,14 @@ You can do some automated testing of your `incr_value` client program as follows
    ```
    curl -O https://jhucsf.github.io/summer2024/assign/ms1_concurrency_tests.zip
    ```
-   <p>
 2. Unzip the zipfile:  
    ```
    unzip ms1_concurrency_tests.zip
    ```
-   <p>
 3. Make the scripts and `supervise` program executable:  
    ```
    chmod a+x supervise incr_value_concurrent.sh incr_value_worker.sh ref_client.rb
    ```
-   <p>
 4.  Make sure your `incr_value` client is up to date:  
     ```
     make depend
@@ -810,13 +797,8 @@ to detach itself:
 pthread_detach( pthread_self() );
 ```
 
-<div class='admonition caution'>
-  <div class='title'>Note!</div>
-  <div class='content' markdown='1'>
 The starter code didn't include this call in the suggestion for the `client_worker`
 function, so you should add it yourself.
-  </div>
-</div>
 
 ### Synchronization
 
@@ -834,9 +816,9 @@ Initially, you will want to test your server "manually" using netcat.
 
 First, start your server in one terminal window:
 
-<div class='highlighter-rouge'><pre>
-./server <i>port</i>
-</pre></div>
+```
+./server port
+```
 
 Any port number 1024 or above may be used. Note that if the port you specify
 is currently in use, `open_listenfd` will return an error result, and the
@@ -845,9 +827,9 @@ a different port.
 
 In a second terminal window, run netcat to connect to your server:
 
-<div class='highlighter-rouge'><pre>
-nc localhost <i>port</i>
-</pre></div>
+```
+nc localhost port
+```
 
 At this point, lines that you type (as input to the `nc` program) will be sent to
 the server as request messages, and any responses the server sends back will
@@ -874,17 +856,14 @@ To use it:
    ```
    curl -O https://jhucsf.github.io/summer2024/assign/ms2_tests.zip
    ```
-   <p>
 2. Unzip it:  
    ```
    unzip ms2_tests.zip
    ```
-   <p>
 3. Make the scripts, `supervise` program, and `ref_incr_value` programs executable:  
    ```
    chmod a+x scripts/*.sh scripts/*.rb supervise ref_incr_value
    ```
-   <p>
 4. Make sure your `server` executable is up to date:  
    ```
    make depend
