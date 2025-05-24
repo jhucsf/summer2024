@@ -10,8 +10,12 @@
     {{ end }}
   </title>
 
+  <div class="notice">
+    <p>Note: this website was for an old offering of CSF and has been archived. It is available for historical purposes only.</p>
+  </div>
+
   {{ $options := (dict "outputStyle" "compressed" "enableSourceMap" false) }}
-  {{ $style := resources.Get "sass/style.scss" | resources.ToCSS $options}}
+  {{ $style := resources.Get "sass/style.scss" | css.Sass $options}}
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
